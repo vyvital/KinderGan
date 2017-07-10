@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.devsoul.dima.kindergarten"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+             debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0' // Circle library
+    compile 'com.android.support:design:24.2.1' // Design library
+    compile 'com.jakewharton:butterknife:6.1.0' // Design library
+    compile 'com.squareup.picasso:picasso:2.5.2' // Picasso library
+    compile 'com.evernote:android-job:1.1.8'     // Android-Job for notifications
+    compile files('libs/volley.jar')// Network library
+}

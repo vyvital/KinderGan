@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.hdodenhof.circleimageview.CircleImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_item_image"
+        android:layout_width="169dp"
+        android:layout_height="159dp"
+        android:src="@drawable/baby"
+        app:civ_border_width="3dp">
+</de.hdodenhof.circleimageview.CircleImageView>

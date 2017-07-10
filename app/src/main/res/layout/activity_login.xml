@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="200dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/main"
+        android:isScrollContainer="false"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.LoginActivity">
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_email"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText android:id="@+id/input_password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/white"
+                  android:inputType="textPassword"
+                  android:hint="@string/hint_password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Parent or Nanny -->
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/myRadioGroup"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <!-- Parent -->
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/parent"
+                     android:text="@string/btn_parent"/>
+
+        <!-- Nanny -->
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/nanny"
+                     android:text="@string/btn_nanny"/>
+    </RadioGroup>
+
+    <!-- Login Button -->
+    <ImageButton
+            android:id="@+id/img_btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:src="@drawable/login"
+            android:background="@null"
+            android:contentDescription="@string/btn_login"/>
+
+    <!-- SignUp Link -->
+    <TextView
+            android:id="@+id/link_SignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/SignUp_lnk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+</LinearLayout>

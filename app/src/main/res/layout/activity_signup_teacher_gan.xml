@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="56dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/background"
+        android:isScrollContainer="false"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.SignupTeacherGanActivity">
+
+    <!--  KinderGan City Spinner -->
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/android_material_design_spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_KGanCityDropdown"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/hint_KGanCity"
+            app:met_floatingLabelTextColor="@color/colorAccent"
+            app:met_primaryColor="@color/white"
+            app:met_textColorHint="@color/white" />
+
+    <!--  KinderGan Name Spinner -->
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/android_material_design_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_KGanNameDropdown"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/hint_KGanName"
+            app:met_floatingLabelTextColor="@color/colorAccent"
+            app:met_primaryColor="@color/white"
+            app:met_textColorHint="@color/white" />
+
+    <!--  KinderGan Class Spinner -->
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/android_material_design_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_KGanClassDropdown"
+            android:textColorHint="@color/colorAccent"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Class Number"
+            app:met_floatingLabelTextColor="@color/colorAccent"
+            app:met_primaryColor="@color/white"
+            app:met_textColorHint="@color/white" />
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:hint="@string/hint_email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:hint="@string/hint_password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Back Button -->
+    <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/back"
+            android:background="@null"
+            android:contentDescription="@string/btn_back"
+            android:layout_gravity="left"/>
+
+    <!-- register Button -->
+    <ImageButton
+            android:id="@+id/img_btn_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:background="@null"
+            android:contentDescription="@string/btn_register"
+            android:src="@drawable/register" />
+
+    <!-- login Link -->
+    <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/login_lnk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="FabOptions">
+        <attr name="button_menu" format="reference" type="menu" />
+        <attr name="background_color" format="reference" type="int" />
+        <attr name="fab_color" format="reference" type="int" />
+    </declare-styleable>
+</resources>

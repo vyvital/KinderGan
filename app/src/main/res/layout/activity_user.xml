@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/user"
+        android:isScrollContainer="false"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.UserActivity">
+
+    <!--  Header Label -->
+    <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/welcome"
+            android:textColor="@color/color1"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+    <!--  Name -->
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+
+    <!--  Email -->
+    <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"/>
+
+    <!--  Circle Profile -->
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_profile"
+            android:layout_width="169dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"/>
+
+    <!--  Enter Button -->
+    <ImageButton
+            android:id="@+id/btnEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="119dp"
+            android:background="@null"
+            android:contentDescription="@android:string/VideoView_error_button"
+            android:src="@drawable/enter"
+            android:layout_gravity="center"/>
+
+    <!--  Contacts Button -->
+    <ImageButton
+            android:id="@+id/btnContacts"
+            android:layout_width="329dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@android:string/VideoView_error_button"
+            android:src="@drawable/contact"
+            android:visibility="gone" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <!--  Special Button -->
+        <ImageButton
+                android:id="@+id/btnSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:contentDescription="@string/btn_logout"
+                android:padding="1dp"
+                android:src="@drawable/special"
+                android:visibility="gone" />
+        <!--  Pick Button -->
+        <ImageButton
+                android:id="@+id/btnPick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:background="@null"
+                android:contentDescription="@string/btn_logout"
+                android:padding="1dp"
+                android:src="@drawable/pick2"
+                android:visibility="gone" />
+    </LinearLayout>
+
+    <!--  Schedule Button -->
+    <ImageButton
+            android:id="@+id/btnSchlp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:src="@drawable/sc"
+            android:contentDescription="@string/schedule"
+            android:visibility="gone"
+            android:padding="1dp"/>
+
+    <ImageButton
+            android:id="@+id/btnSchlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:src="@drawable/sc"
+            android:contentDescription="@string/schedule"
+            android:visibility="visible"
+            android:padding="1dp"/>
+
+    <!--  Logout Button -->
+    <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/btn_logout"
+            android:padding="1dp"
+            android:src="@drawable/logout"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

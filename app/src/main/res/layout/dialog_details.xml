@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="5dp">
+
+    <!-- Details Header -->
+    <TextView
+            android:text="Details"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/color1"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText" />
+
+    <!-- Kid Name -->
+    <TextView
+            android:id="@+id/Kid_Name"
+            android:text="Kid Name: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    <!-- Parent Full Name -->
+    <TextView
+            android:id="@+id/Parent_FullName"
+            android:text="Parent Full Name: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    <!-- Kid Birth Date -->
+    <TextView
+            android:id="@+id/Kid_BirthDate"
+            android:text="Birth Date: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    <!-- Address -->
+    <TextView
+            android:id="@+id/Address"
+            android:text="Address: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+    <!-- Special Requests -->
+    <TextView
+            android:id="@+id/Special_Requests"
+            android:text="Special Requests: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    <!-- Contact1 -->
+    <TextView
+            android:id="@+id/Contact1"
+            android:text="Contact: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    <!-- Contact2 -->
+    <TextView
+            android:id="@+id/Contact2"
+            android:text="Contact: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    <!-- Contact3 -->
+    <TextView
+            android:id="@+id/Contact3"
+            android:text="Contact: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+</LinearLayout>

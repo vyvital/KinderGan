@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="teal">#00ABA9</color>
+    <color name="darken">#1D1D1D</color>
+    <color name="purple">#7E3878</color>
+    <color name="magenta">#FF0097</color>
+    <color name="green">#00A300</color>
+    <color name="red">#EE1111</color>
+    <color name="btn_logut_bg">#FF6861</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="color1">#ff5a92</color>
+    <color name="color2">#ff2770</color>
+    <color name="color3">#E84F3E</color>
+</resources>

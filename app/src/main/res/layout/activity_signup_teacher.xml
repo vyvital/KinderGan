@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="56dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/background"
+        android:isScrollContainer="false"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.SignupTeacherActivity">
+
+    <!--  ID Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:maxLength="10"
+                android:hint="@string/hint_ID"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--  First Name Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_FName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:hint="@string/hint_FName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--  Last Name Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_LName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:hint="@string/hint_LName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--  Phone Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:hint="@string/hint_phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+        <!--  Teacher Picture Button -->
+        <ImageButton
+                android:id="@+id/btn_NannyPic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic"
+                android:background="@null"
+                android:contentDescription="@string/hint_pic"
+                android:layout_gravity="left"/>
+
+        <!--  Teacher Picture -->
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/hint_NannyPic"
+                android:layout_toRightOf="@id/btn_NannyPic"
+                android:layout_marginLeft="60dp"/>
+
+        <!-- Next Button -->
+        <ImageButton
+                android:id="@+id/img_btn_next"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:background="@null"
+                android:contentDescription="@string/btn_next"
+                android:layout_toRightOf="@id/btn_NannyPic"
+                android:layout_below="@id/imageView"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+
+    <!-- login Link -->
+    <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/login_lnk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+</LinearLayout>

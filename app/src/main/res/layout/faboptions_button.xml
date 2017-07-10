@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="@dimen/faboptions_icon_size"
+           android:layout_height="@dimen/faboptions_icon_size"
+           android:layout_margin="@dimen/faboptions_button_padding"
+           android:layout_gravity="center"
+           android:clickable="true"
+           android:contentDescription="@string/teacher_menu"
+           android:foreground="?attr/selectableItemBackgroundBorderless" />
